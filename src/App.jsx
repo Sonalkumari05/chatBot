@@ -93,9 +93,7 @@ function App() {
         .split(' ')
         .map((word) => word.split('').sort(() => Math.random() - 0.5).join(''))
         .join(' ');
-    } else {
-      botResponse = `I don't understand this bot action.`;
-    }
+    } 
 
     return botResponse;
   };
